@@ -5,9 +5,9 @@
       location = "group:CharTCA/CharTCA.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:CharTMA/CharTMA.xcodeproj">
+      location = "group:CharTBA/CharTBA.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:CharTBA/CharTBA.xcodeproj">
+      location = "group:CharTMA/CharTMA.xcodeproj">
    </FileRef>
 </Workspace>

@@ -49,6 +49,7 @@
 		2B8A632E28E3930A000FAB24 /* CharTMAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CharTMAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B8A633228E3930A000FAB24 /* CharTMAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharTMAUITests.swift; sourceTree = "<group>"; };
 		2B8A633428E3930A000FAB24 /* CharTMAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharTMAUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2B8A637828E3968D000FAB24 /* CharTMA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CharTMA.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +100,7 @@
 		2B8A631028E39309000FAB24 /* CharTMA */ = {
 			isa = PBXGroup;
 			children = (
+				2B8A637828E3968D000FAB24 /* CharTMA.entitlements */,
 				2B8A631128E39309000FAB24 /* AppDelegate.swift */,
 				2B8A631328E39309000FAB24 /* SceneDelegate.swift */,
 				2B8A631528E39309000FAB24 /* ViewController.swift */,
@@ -435,6 +437,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CharTMA/CharTMA.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AQUE4FE98B;
@@ -452,6 +455,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.zheref.CharTMA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -463,6 +469,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CharTMA/CharTMA.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AQUE4FE98B;
@@ -480,6 +487,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.zheref.CharTMA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
