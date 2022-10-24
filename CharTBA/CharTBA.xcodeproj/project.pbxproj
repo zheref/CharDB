@@ -19,6 +19,9 @@
 		2B8C2BB1290724E400AE62C1 /* RootWindow+Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8C2BB0290724E400AE62C1 /* RootWindow+Binder.swift */; };
 		2B8C2BB4290725B500AE62C1 /* RootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8C2BB3290725B500AE62C1 /* RootController.swift */; };
 		2B8C2BB6290725DB00AE62C1 /* RootController+Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8C2BB5290725DB00AE62C1 /* RootController+Binder.swift */; };
+		2B8C2BB9290727CE00AE62C1 /* ReactiveKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2B8C2BB8290727CE00AE62C1 /* ReactiveKit */; };
+		2B8C2BBC2907280200AE62C1 /* Bond in Frameworks */ = {isa = PBXBuildFile; productRef = 2B8C2BBB2907280200AE62C1 /* Bond */; };
+		2B8C2BBF2907284800AE62C1 /* Layoutless in Frameworks */ = {isa = PBXBuildFile; productRef = 2B8C2BBE2907284800AE62C1 /* Layoutless */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B8C2BBF2907284800AE62C1 /* Layoutless in Frameworks */,
+				2B8C2BB9290727CE00AE62C1 /* ReactiveKit in Frameworks */,
+				2B8C2BBC2907280200AE62C1 /* Bond in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +192,11 @@
 			dependencies = (
 			);
 			name = CharTBA;
+			packageProductDependencies = (
+				2B8C2BB8290727CE00AE62C1 /* ReactiveKit */,
+				2B8C2BBB2907280200AE62C1 /* Bond */,
+				2B8C2BBE2907284800AE62C1 /* Layoutless */,
+			);
 			productName = CharTBA;
 			productReference = 2B8A62D228E392B7000FAB24 /* CharTBA.app */;
 			productType = "com.apple.product-type.application";
@@ -258,6 +269,11 @@
 				Base,
 			);
 			mainGroup = 2B8A62C928E392B7000FAB24;
+			packageReferences = (
+				2B8C2BB7290727CE00AE62C1 /* XCRemoteSwiftPackageReference "ReactiveKit" */,
+				2B8C2BBA2907280200AE62C1 /* XCRemoteSwiftPackageReference "Bond" */,
+				2B8C2BBD2907284800AE62C1 /* XCRemoteSwiftPackageReference "Layoutless" */,
+			);
 			productRefGroup = 2B8A62D328E392B7000FAB24 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -646,6 +662,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2B8C2BB7290727CE00AE62C1 /* XCRemoteSwiftPackageReference "ReactiveKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/DeclarativeHub/ReactiveKit.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		2B8C2BBA2907280200AE62C1 /* XCRemoteSwiftPackageReference "Bond" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/DeclarativeHub/Bond.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		2B8C2BBD2907284800AE62C1 /* XCRemoteSwiftPackageReference "Layoutless" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/DeclarativeHub/Layoutless.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2B8C2BB8290727CE00AE62C1 /* ReactiveKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2B8C2BB7290727CE00AE62C1 /* XCRemoteSwiftPackageReference "ReactiveKit" */;
+			productName = ReactiveKit;
+		};
+		2B8C2BBB2907280200AE62C1 /* Bond */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2B8C2BBA2907280200AE62C1 /* XCRemoteSwiftPackageReference "Bond" */;
+			productName = Bond;
+		};
+		2B8C2BBE2907284800AE62C1 /* Layoutless */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2B8C2BBD2907284800AE62C1 /* XCRemoteSwiftPackageReference "Layoutless" */;
+			productName = Layoutless;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2B8A62CA28E392B7000FAB24 /* Project object */;
 }
